@@ -1,0 +1,153 @@
+/*nav*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+nav, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav li a{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/*header*/
+header{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+
+@media(max-width: 800px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+}
+
+header nav .left{
+    display: flex;
+}
+
+header nav .center{
+    display: flex;
+}
+
+header nav .right{
+    display: flex;
+}
+
+/*fundo*/
+.fundo{
+    background-image: url(hp-2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fundo h1{
+    font-size: 3rem;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.fundo h3{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px #000;
+    text-align: center;
+}
+
+.provedor h4{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px #000;
+    text-align: center;
+}
+
+.formulario button{
+    background-color: #979199;
+    border-radius: 12px;
+    border: none;
+    padding: 5px 8px;
+    font-weight: bold;
+    font-size: small;
+    box-shadow: 2px 2px 6px #000;
+    cursor: pointer;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.formulario button:hover{
+    background-color: #747275;
+    color: #000;
+    transition-duration: 0.4s;
+}
+
+.formulario form:focus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.formulario input{
+    opacity: 0.6;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+    box-shadow: 2px 2px 6px #000;
+    width: auto;
+    justify-content: center;
+}
+
+.formulario input:hover{
+    opacity: 1;
+}
+
+.formulario p{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px #000;
+    text-align: center;
+}
